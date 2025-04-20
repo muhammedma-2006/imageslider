@@ -5,14 +5,14 @@ let intervalId = null;
 function initialiseSlider(){
     if(slides.length){
         slides[slideIndex].classList.add("displaySlide");
-            intervalId =setInterval(nextSlide,5000);
+            
 
 
         
     }
 }
 function showSlide(index){
-    if(slideIndex > slides.length){
+    if(slideIndex >= slides.length){
         slideIndex = 0;
     }
     else if(slideIndex < 0){
