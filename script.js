@@ -12,12 +12,17 @@ function initialiseSlider(){
     }
 }
 function showSlide(index){
- 
+    if(slideIndex > slides.length){
+        slideIndex = 0;
+    }
+    else if(slideIndex < 0){
+        slideIndex = slides.length - 1;
+    }
 
     slides.forEach(slide => {
         slide.classList.remove("displaySlide");
     })
-     slide[slideIndex].classList.add("displaySlide");
+     slides[slideIndex].classList.add("displaySlide");
 }
 function prevSlide(){
 
@@ -29,3 +34,4 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+initialiseSlider();
