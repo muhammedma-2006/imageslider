@@ -1,5 +1,5 @@
 let slideIndex = 0;
-const slides = document.querySelectorAll('.slider img');
+const slides = document.querySelectorAll('.slides img');
 let intervalId = null;
 
 function initialiseSlider(){
