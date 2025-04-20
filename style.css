@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+img{
+    display: none;
+    width: 100%
+}
